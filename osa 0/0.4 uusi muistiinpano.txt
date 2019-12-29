@@ -1,0 +1,39 @@
+1) selain lähettää lomakkeen datan palvelimelle => HTTP POST osoitteeseen new_note
+
+selain -> palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+palvelin -> selain: Status Code: 302, Location: /notes
+
+note over palvelin:
+palvelin tallentaa lomakkeen tiedot muistiinpanoihin
+ja lähettää selaimelle uudelleenohjauspyynnön
+end note
+
+2) selain tekee palvelin kehoittaman HTTP GET -pyynnön osoitteesta notes
+
+selain -> palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+palvelin -> selain: HTML-koodi
+
+3) selain lataa myös main.css (sivun tyyli)
+
+selain -> palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+palvelin -> selain: main.css
+
+4) selain lataa myös main.js (javascript-koodi)
+
+selain -> palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+palvelin -> selain: main.js
+
+note over selain:
+selain alkaa suorittaa js-koodia
+minkä johdosta selain pyytää JSON-datan palvelimelta
+end note
+
+5) selain lataa myös data.json (muistiinpanojen raakadata)
+
+selain -> palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+palvelin -> selain: data.json
+
+note over selain: 
+selain suorittaa tapahtumankäsittelijän
+joka renderöi muistiinpanot näytölle
+end note

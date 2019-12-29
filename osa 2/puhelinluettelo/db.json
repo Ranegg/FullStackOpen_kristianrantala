@@ -1,0 +1,34 @@
+{
+  "persons": [
+    {
+      "name": "Kakka Kuuskaks",
+      "number": "62626262",
+      "id": 1
+    },
+    {
+      "name": "PuskaJukka",
+      "number": "10214",
+      "id": 2
+    },
+    {
+      "name": "Pappi Pitkänen",
+      "number": "757178123",
+      "id": 3
+    },
+    {
+      "name": "Peppi Pitkätossu",
+      "number": "2266554",
+      "id": 4
+    },
+    {
+      "name": "Dippi Dappinen",
+      "number": "55555",
+      "id": 5
+    },
+    {
+      "name": "Tippi",
+      "number": "11223",
+      "id": 6
+    }
+  ]
+}
